@@ -1,0 +1,91 @@
+.note_main{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.note_book_name{
+  color:var(--color-light-gray);
+  text-align: left;
+  align-self:center;
+  margin-left:1rem;
+  text-decoration:underline;
+}
+
+.note_child{
+  color:var(--color-light);
+  background-color: var(--color-dark);
+  border:5px solid var(--color-main);
+  width:90%;
+  height:fit-content;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:1.5rem;
+  padding:1rem;
+  border-radius:5px;
+}
+.note_title{
+  font-weight:bold;
+  font-size:1.4rem;
+}
+.note_body{
+  font-size:1.2rem;
+  font-weight:bold;
+  line-height:1.7rem;
+  width:100%;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+}
+.note_tag_button_sub{
+  display:flex;
+  flex-direction: row;
+  width:95%;
+  justify-content: space-between;
+}
+.note_tag_buttons{
+  display:flex;
+  flex-direction:column
+}
+
+.note_tag{
+  color:var(--color-light-gray);
+  font-size:1.1rem;
+  margin-left:1rem;
+  margin-bottom:1rem;
+  text-decoration: underline;
+}
+
+.note_tag_edit{
+  color:var(--color-light-gray);
+  font-size:1.1rem;
+  margin-left:1rem;
+  text-decoration: underline;
+}
+
+
+@media screen and (min-width:2500px){
+  .note_book_name{
+    font-size:2.3rem;
+  }
+  .note_child{
+    width:95%;
+  }
+  .note_title{
+    font-size:2.3rem;
+  }
+  .note_body{
+    font-size:2rem;
+    line-height:3rem;
+  }
+  .note_tag{
+    font-size: 2rem;
+  }
+  .note_tag_edit{
+    font-size: 2rem;
+  }
+}

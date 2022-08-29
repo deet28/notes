@@ -1,0 +1,433 @@
+/*Content Creation Forms*/
+
+.form_main{
+  min-height:fit-content;
+  left:0;
+  background-color: var(--color-dark);
+  border-radius:10px;
+  padding:1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border:5px solid var(--color-success)
+}
+
+.form_link{
+  font-size:1.3rem;
+  font-weight:bold;
+  color:var(--color-main);
+  text-decoration:underline;
+}
+
+.form_back_button{
+  color:var(--color-light-gray);
+  text-decoration: underline;
+  margin-left:0.5rem;
+}
+
+.form_back_button:hover{
+  color:var(--color-light);
+}
+
+.form_child{
+  width:75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+}
+
+.form_child label{
+  font-size:1.4rem;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom:10rem;
+}
+
+.form_child input{
+  min-width:100%;
+  padding:1rem;
+  outline:none;
+  border:transparent;
+  border-bottom:2px solid black;
+  background-color: transparent;
+  font-size:1.4rem;
+  font-weight: bold;
+  color:white;
+}
+
+.form_child textarea{
+  resize:none;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color:tarnsparent;
+  width:100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color:white;
+  padding:1rem;
+  outline:none;
+  line-height:1.5rem;
+}
+.form_child button{
+  background-color:var(--color-success);
+  color:white;
+  font-size:1.3rem;
+  font-weight:bold;
+  align-self: center;
+  width:15rem;
+  height:2.5rem;
+  margin-top:3rem;
+  border-radius: 10px;
+  border-color:transparent;
+  cursor: pointer;
+}
+
+.form_child button:hover{
+  background-color:var(--color-success-hover);
+}
+
+/*Content Deletion Forms*/
+
+.form_del{
+  min-height:fit-content;
+  left:0;
+  background-color: var(--color-dark);
+  border-radius:10px;
+  padding:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  border:5px solid var(--color-error)
+}
+
+.form_del p{
+  font-size:1.5rem;
+  font-weight:bold;
+  color:var(--color-light-gray);
+  max-width:75%;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.form_del_name{
+  color:white;
+  text-decoration: underline;
+}
+
+.form_del_buttons{
+  margin-top:2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form_del a{
+  font-size:1.3rem;
+  font-weight:bold;
+  text-decoration: underline;
+  color:var(--color-light-gray);
+}
+
+.form_del button{
+  background-color:var(--color-error);
+  color:white;
+  font-size:1.3rem;
+  font-weight:bold;
+  align-self: center;
+  width:10rem;
+  height:2.5rem;
+  border-radius: 10px;
+  border-color:transparent;
+  cursor: pointer;
+}
+
+/*Login Form*/
+
+.form_login_main{
+  min-height:fit-content;
+  left:0;
+  background-color: var(--color-dark);
+  border-radius:10px;
+  padding:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:5px solid var(--color-success);
+}
+
+.form_login_header{
+  color:var(--color-main);
+  margin-bottom:2rem;
+  font-size:1.8rem;
+}
+
+.form_login_main input{
+  width:80%;
+  height:2rem;
+  background-color: transparent;
+  border:transparent;
+  border-bottom:2px solid black;
+  color:var(--color-light);
+  outline:none;
+  font-size:1.2rem;
+  font-weight:bold;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  padding:0.5rem;
+}
+
+.form_login_nest{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_login_main p{
+  font-size:1.1rem;
+  color: var(--color-light);
+  font-weight:bold;
+  line-height:2rem;
+}
+
+.form_login_main label{
+  color:var(--color-light);
+  font-size:1.3rem;
+  font-weight:bold;
+}
+
+.form_login_main button{
+  background-color: var(--color-main);
+  color:var(--color-light);
+  line-height:2.5rem;
+  font-size:1rem;
+  font-weight: bold;
+  border-radius:10px;
+  letter-spacing:0.01rem;
+  text-align: center;
+  padding:0.01rem;
+  width:8rem;
+  text-align: center;
+  border:transparent;
+  cursor: pointer;
+}
+.form_login_main button:hover{
+  background-color: var(--color-main-hover);
+}
+
+/* Register Form */
+
+.form_register_main{
+  background-color: var(--color-dark);
+  border:5px solid var(--color-success);
+  min-height:fit-content;
+  left:0;
+  border-radius:10px;
+  padding:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_register_header{
+  color:var(--color-main);
+  text-decoration:underline;
+  margin-bottom:1rem;
+  font-size:1.8rem;
+}
+.form_register_main p{
+  font-size:1.1rem;
+  color: var(--color-light);
+  font-weight:bold;
+  line-height:2rem;
+}
+.form_register_main ul{
+  display:none;
+}
+
+.form_register_button_div{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:1.5rem;
+}
+
+.form_register_main button{
+  background-color: var(--color-main);
+  color:var(--color-light);
+  line-height:2.5rem;
+  font-size:1rem;
+  font-weight: bold;
+  border-radius:10px;
+  letter-spacing:0.01rem;
+  text-align: center;
+  padding:0.01rem;
+  width:8rem;
+  text-align: center;
+  border:transparent;
+  cursor: pointer;
+}
+.form_register_main button:hover{
+  background-color: var(--color-main-hover);
+}
+.form_register_main label{
+  color:var(--color-light);
+  font-size:1.2rem;
+  font-weight:bold;
+}
+.helptext{
+  color:var(--color-error);
+  font-size:1.1rem;
+}
+#id_username{
+  width:100%;
+  height:2rem;
+  background-color: transparent;
+  border:transparent;
+  border-bottom:2px solid black;
+  color:var(--color-light);
+  outline:none;
+  font-size:1.2rem;
+  font-weight:bold;
+  padding:0.5rem;
+}
+#id_password1{
+  width:100%;
+  height:2rem;
+  background-color: transparent;
+  border:transparent;
+  border-bottom:2px solid black;
+  color:var(--color-light);
+  outline:none;
+  font-size:1.2rem;
+  font-weight:bold;
+  padding:0.5rem;
+}
+
+#id_password2{
+  width:100%;
+  height:2rem;
+  background-color: transparent;
+  border:transparent;
+  border-bottom:2px solid black;
+  color:var(--color-light);
+  outline:none;
+  font-size:1.2rem;
+  font-weight:bold;
+  padding:0.5rem;
+}
+
+/* Register Form */
+
+/*Media Queries*/
+
+@media screen and (max-width:500px){
+  .form_main{
+    padding-left:0rem;
+  }
+
+  .form_main input{
+    font-size:1.2rem;
+    margin-left:0;
+  }
+  .form_main button{
+    width:8rem;
+    font-size:1rem;
+  }
+  .form_main label{
+    font-size: 1.2rem;
+  }
+  .form_child textarea{
+    font-size:1.1rem;
+    line-height: 1.4rem;
+  }
+  .form_back_button{
+    font-size:1.2rem;
+  }
+  .form_del p{
+    font-size: 1.4rem;
+    line-height:1.8rem;
+    text-align: left;
+  }
+  .form_del button{
+    width:6rem;
+  }
+
+  .form_login_header{
+    font-size:1.4rem;
+  }
+
+  .form_login_main label{
+    font-size: 1.2rem;
+  }
+  .form_login_main input{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .form_login_main button{
+    width:7rem;
+    height:2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .form_login_main p {
+    font-size: 1.1rem;
+  }
+  .form_register_header{
+    margin-bottom:0rem;
+    font-size:1.4rem;
+  }
+
+  .form_register_main label{
+    margin-top:0;
+    font-size: 1.2rem;
+  }
+
+  .form_register_main button{
+    width:7rem;
+    height:2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  .form_register_main p{
+    font-size: 1.1rem;
+  }
+
+  #id_username{
+    font-size: 1.3rem;
+  }
+  #id_password1{
+    font-size:1.3rem;
+  }
+   #id_password2{
+    font-size:1.3rem;
+  }
+
+  .helptext{
+    font-size:0.9rem;
+    margin-top: 1.2rem;
+  }
+  .form_link{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:350px){
+   .form_main input{
+    font-size:1rem;
+  }
+  .form_child textarea{
+    font-size:1rem;
+    line-height: 1.4rem;
+  }
+}

@@ -1,0 +1,121 @@
+/*Book Head*/
+
+.head_book_div{
+  width:100%;
+  margin-bottom:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items:left;
+}
+
+/*Book Body*/
+
+.list_note_parent{
+  background-color: var(--color-dark);
+  border:0.5px solid var(--color-main);
+  display:block;
+  border-bottom:none;
+  margin-bottom:0;
+  padding:2rem;
+}
+
+.list_note_parent:hover{
+  cursor:pointer;
+}
+
+.list_book_title{
+  color:var(--color-light-gray);
+  margin-left:0.5rem;
+  font-size:1.5rem;
+}
+
+.list_note_button{
+  background-color: var(--color-main);
+  color:var(--color-light);
+  width:7rem;
+  height:2.5rem;
+  line-height:2.5em;
+  font-size:1rem;
+  font-weight: bold;
+  border-radius:10px;
+  letter-spacing:0.01rem;
+  text-align: center;
+  padding:0.01rem;
+}
+
+.list_note_title{
+  color:var(--color-light-gray);
+  margin-left:0.5rem;
+  font-size:1.5rem;
+}
+
+.list_note_body{
+  color:var(--color-light);
+  font-size:1.1rem;
+  font-weight: bold;
+  margin-left:0.5rem;
+}
+
+.list_note_button:hover{
+  color:var(--color-light);
+}
+
+.list_note_tag_parent{
+  background-color: var(--color-dark);
+  border:0.5px solid var(--color-main);
+  border-top:none;
+  height:5rem;
+  margin-bottom:2rem;
+  display:flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.list_note_tag{
+  color:var(--color-light-gray);
+  text-decoration: underline;
+  font-size:1.3rem;
+  margin-left:3rem;
+}
+
+.list_note_tag:hover{
+  color:var(--color-light)
+}
+
+@media screen and (max-width:500px){
+  .list_book_title{
+  color:var(--color-light-gray);
+  margin-left:0.5rem;
+  font-size:1.4rem;
+  margin-top:0;
+}
+  .list_note_button{
+    width:6rem;
+    height:2rem;
+    line-height: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width:2500px){
+  .list_book_title{
+    font-size: 2.4rem;
+  }
+  .list_note_button{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    height:3rem;
+    width:11rem;
+  }
+
+  .list_note_title{
+    font-size: 2.3rem;
+  }
+  .list_note_body{
+    font-size: 2rem;
+  }
+  .list_note_tag{
+    font-size: 1.9rem;
+  }
+}

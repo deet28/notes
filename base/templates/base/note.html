@@ -1,0 +1,23 @@
+{%extends 'main.html'%}
+{%block content%}
+
+<div class = "note_tag_buttons">
+    <a class = "note_tag" href = "{{request.META.HTTP_REFERER}}">Go back</a>
+</div>
+
+<a href = "{%url 'book' note.book.id%}">
+  <h2 class = "note_book_name">{{note.book.name}}</h2>
+</a>
+<hr/>
+
+<div class = "note_main">
+  <div class = "note_tag_button_sub">
+    <a class = "note_tag_edit" href = "{%url 'update_note' note.id%}">Edit Note</a>
+    <a class = "note_tag_edit" href = "{%url 'delete_note' note.id%}">Delete Note</a>
+  </div>
+  <div class = "note_child">
+    <h3 class = "note_title">{{note.title}}</h3>
+    <p class = "note_body">{{note.body}}</p>
+  </div>
+</div>
+{%endblock content%}

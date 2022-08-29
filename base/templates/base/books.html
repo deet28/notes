@@ -1,0 +1,10 @@
+{%for book in books%}
+<div class = "home_book">
+  <h3><a class = "home_book_title" href = "{%url 'book' book.id%}">{{book.name|truncatechars:50}}</a></h3>
+    <a class = "home_tag" href="{%url 'update_book' book.id%}">Update Book</a>
+    <a class = "home_tag" href="{%url 'delete_book' book.id%}">Delete Book</a>
+    <br/>
+    <br/>
+    <small class = "home_topic">Topics: {{book.topic}}</small>
+</div>
+{%endfor%}

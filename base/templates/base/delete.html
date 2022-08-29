@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{%block content%}
+<div class = "form_del">
+  <form method = "POST" action = "" class = "form_del">
+    {%csrf_token%}
+    {%if obj.name%}
+    <p>Are you sure you want to delete 
+      <span class = "form_del_name">
+        {{obj.title}}{{obj.name}}?
+      </span>
+      All notes associated with this book will be lost forever.
+    </p>
+    {%else%}
+    <p>Are you sure you want to delete 
+      <span class = "form_del_name">
+        {{note.title}}?
+      </span>
+      This note will be lost forever!
+    </p>
+    {%endif%}
+   <div class = "form_del_buttons">
+      <a href = "{{request.META.HTTP_REFERER}}"> Go Back</a>
+      <button type = "submit"/ value = "Confirm">Delete</button>
+    </div>
+  </form>
+</div>
+{%endblock content%}

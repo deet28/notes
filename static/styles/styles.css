@@ -1,0 +1,51 @@
+@import 'nav.css';
+@import 'home.css';
+@import 'list.css';
+@import 'form.css';
+@import 'note.css';
+:root {
+  --color-main: #1c99ec;
+  --color-main-hover:rgb(73, 172, 238);
+  --color-main-light: #e1f6fb;
+  --color-dark: #3f4156;
+  --color-dark-medium: #383b46;
+  --color-dark-light: #8a91ab;
+  --color-light: #e5e5e5;
+  --color-gray: #8b8b8b;
+  --color-light-gray: #b2bdbd;
+  --color-bg: #2d2d39;
+  --color-success: #5dd693;
+   --color-success-hover: #7ecfa2;
+  --color-error: #fc4b0b;
+}
+body{
+  background-color:  var(--color-dark-medium);
+  padding:0;
+  top:0 !important;
+  max-width:100vw !important;
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+h1{
+   color:var(--color-main-light)
+}
+
+.set_space{
+  margin-top:5rem;
+}
+
+.messages{
+  z-index:10;
+  color:red;
+  margin-top:1rem;
+  list-style-type:none;
+}

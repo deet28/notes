@@ -1,0 +1,26 @@
+{%for note in notes%}
+  {%if note.book.owner == request.user%}
+    <div class = "recent_notes_main">
+      <div class = "recent_notes_nest">
+        <div class = "recent_notes_time_sub">
+          <span class = "recent_notes_time">
+            Saved {{note.created|timesince}} ago
+          </span>
+        </div>
+      
+        <div class = "recent_notes_body_sub">
+         <h3 class =  "recent_notes_title">
+            <a class = "recent_notes_tag_name" href = "{%url 'note' note.id%}">
+            {{note.title|truncatechars:25}}</a>
+          </h3>
+          {%if note.book%}
+          <h4 class = "recent_notes_book"> From - 
+            <a class = "recent_notes_tag" href = "{%url 'book' note.book.id%}">{{note.book|truncatechars:25}} 
+            </a> 
+          </h4>
+        </div>
+      </div>
+      {%endif%}
+    </div>
+  {%endif%}
+{%endfor%}

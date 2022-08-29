@@ -1,0 +1,20 @@
+{%if user.is_authenticated%}
+<nav class = "nav_main">
+  <div class = "nav_main_div">
+    <div class = "nav_nest">
+      <a class = "nav_child_title" href = "/">
+        <span class = "nav_child">Notebooks</span></a>
+        <a class = "logout_button" href = "/logout">Logout</a>
+    </div>
+  </div>
+</nav>
+{%else%}
+<nav class = "nav_main">
+  <div class = "nav_nest">
+    <a href = "/">
+      <span class = "nav_child">Notebooks</span></a>
+  </div>
+</nav>
+{%endif%}
+<hr />
+<div class="set_space"></div>

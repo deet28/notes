@@ -1,0 +1,26 @@
+{%extends 'main.html'%}
+{%block content%}
+<div>
+  
+  <div class = "head_div">
+   
+    <div class = "head_sub_div">
+      <h2 class = "home_title">Your books</h2>
+      <a class = "home_button" href = "{% url 'create_book' %}">+ Make Book</a>
+    </div>
+    <div>
+      {%include 'base/search.html'%}
+    </div>
+    
+  </div>
+  <div class = "home_body_parent">
+    <div class = "home_body">
+    {%include 'base/books.html'%}
+    </div>
+    <div class = "home_side_main">
+       <h2 class = "home_side_title">Recent Notes</h2>
+      {%include 'base/recent_notes.html'%}
+    </div>
+  </div>
+</div>
+{%endblock%} 

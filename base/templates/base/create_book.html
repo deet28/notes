@@ -1,0 +1,14 @@
+{%extends 'main.html'%}
+{%block content%}
+
+<h2 class = "form_back_button">
+  <a href="{{request.META.HTTP_REFERER}}">Go back</a>
+</h2>
+<div class = "form_main">
+  <form method = "POST" action ="" class = "form_child">
+    {%csrf_token%}
+      {{form.as_p}}
+      <button type = "submit" value = "Submit">Save book</button>
+    </form>
+  </div>
+{%endblock content%}
