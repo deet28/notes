@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ldb3gj&2p6v*f#(cayn6ku^#o_%qlsndsc#q(zclp^#v=wk75r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://david-turchetta-notebooks.herokuapp.com',
+ALLOWED_HOSTS=['david-turchetta-notebooks.herokuapp.com',
 '127.0.0.1']
 
 
