@@ -1,1 +1,1 @@
-web: gunicorn notesapp.wsgi:application -w 2 -b :8000 --timeout 120 -- log-file -
+web: gunicorn notesapp.wsgi:-- log-file --
